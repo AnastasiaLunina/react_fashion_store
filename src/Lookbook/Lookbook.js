@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { data } from "./data";
-import './Lookbook.css'
+import './Lookbook.css';
+
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 
 function Lookbook() {
   const [person , setPerson] = useState(0);
@@ -37,8 +43,11 @@ function Lookbook() {
       </div>
 
       <div className="container-btn">
-        <button className="btn1" onClick={previousPerson}>Previous</button>
-        <button className="btn2" onClick={nextPerson}>Next</button>
+        {/* <FontAwesomeIcon icon={faArrowRight} onClick={previousPerson} className="btn1"/>
+        <FontAwesomeIcon icon={faArrowLeft} onClick={previousPerson} className="btn2"/> */}
+
+        <button className="btn1" onClick={nextPerson}><FontAwesomeIcon icon={faArrowRight} className='arrow'/></button>
+        <button className="btn2" onClick={nextPerson}><FontAwesomeIcon icon={faArrowLeft} className='arrow'/></button>
       </div>
     </div>
   )

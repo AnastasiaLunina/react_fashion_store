@@ -1,14 +1,22 @@
+/* .main-container {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
 .link-container {
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
+    /* position: absolute;
     right: 20%;
     left: 20%;
-    top: 80%;
+    top: 80%; */
 }
 
 .link {
     text-decoration: none;
     font-size: 40px;
     color: red;
+    /* position: fixed;
+    text-align: center;
+    z-index: 2; */
 }

@@ -10,7 +10,7 @@ import {
 
 function Sections() {
   return (
-    <div>
+    <div className='main-container'>
     <Router>
       <nav className='link-container'>
         <Link to='/new' className='link'>new</Link>

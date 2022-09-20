@@ -11,12 +11,26 @@
     position: absolute;
     right: 10%;
     top: 150%;
+    /* height: 80px; */
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .btn2 {
     position: absolute;
     left: 10%;
     top: 150%;
+    /* height: 80px; */
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.arrow {
+    /* width: 80px; */
+    height: 80px;
+
 }
 
 .text {
