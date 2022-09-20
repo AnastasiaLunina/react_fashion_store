@@ -1,0 +1,27 @@
+.lookbook-img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-img {
+    position: relative;
+}
+
+.btn1 {
+    position: absolute;
+    right: 10%;
+    top: 150%;
+}
+
+.btn2 {
+    position: absolute;
+    left: 10%;
+    top: 150%;
+}
+
+.text {
+    position: absolute;
+    top: 105%;
+    left: 25%;
+    z-index: 1;
+  }

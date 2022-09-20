@@ -1,0 +1,14 @@
+.link-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    top: 80%;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 40px;
+    color: red;
+}
