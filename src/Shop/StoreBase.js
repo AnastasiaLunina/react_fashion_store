@@ -20,7 +20,7 @@ function StoreBase() {
         <Nav/>
           <div className='cont'>
             <h2 className='back'>Free Standard Shipping</h2>
-        </div>
+          </div>
         <Buttons chosenClothes={chosenClothes}/>
         <Clothes garment={garment}/>
       </div>

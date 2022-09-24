@@ -17,11 +17,13 @@ import './App.css';
 import logo from './img/logo.png';
 import cart from './img/shopping-bag.png';
 import StoreBase from './Shop/StoreBase';
+import MainModal from '../src/Modal/MainModal';
 
 function App() {
   return (
     <div>
       <div>
+        <MainModal/>
         <Router>
           <nav className='link-container'>
             {/* <Link to='/' className='link'>home</Link> */}

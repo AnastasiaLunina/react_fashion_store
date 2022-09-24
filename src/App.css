@@ -52,18 +52,18 @@
   border-bottom: 5px solid;
   background: transparent;
   text-transform: capitalize;
-  color: #fff;
+  color: red;
   font-size: 25px;
   outline: none;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
+  color: red;
   opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #fff;
+  color: red;
 }
 
 .logo {

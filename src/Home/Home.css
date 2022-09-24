@@ -77,11 +77,6 @@
   .link {
     position: fixed;
     z-index: 3;
-    /* right: 50%; */
-    /* left: 50%; */
-    /* width: 180px; */
-    /* height: 40px; */
-    /* right: auto; */
     top:50vh;
     text-decoration: none;
     font-size: 40px;
@@ -90,4 +85,5 @@
     background-color: transparent;
     cursor: pointer;
   }
+
 

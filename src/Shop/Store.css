@@ -1,11 +1,24 @@
  .products {
   display: flex;
   flex-wrap: wrap;
-
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 body {
   /* background-color: red; */
+}
+
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  width: 400px;
 }
 
 .product-card {
@@ -13,6 +26,7 @@ body {
   flex-grow: 2;
   flex-basis: 25%;
   margin-top: 40px;
+  margin-right: 100px;
 }
 
 .cont, nav {
@@ -40,3 +54,23 @@ button {
   margin: 10px;
 }
 
+.bn3637 {
+  text-align: center;
+  color: #fff;
+}
+
+.bn36 {
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn36:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+.buttons {
+  margin-top: 100px;
+}
+
+.description {
+  width: 300px;
+}

@@ -19,22 +19,6 @@ function Home() {
     <div>
       <div className="home" id="outer-container">
         <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-        {/* <div id="page-wrap">
-          <a className="logo" href="/"><img src={logo} alt='logo' height='160px'/></a>
-        </div>
-        <div className="shopping-cart-container">
-          <a href="cart"><img src={cart} alt='cart' className="cart"/></a>
-        </div>
-
-        <form>
-          <label>
-            <input type="search" name="name" className="input-search" placeholder="search..."/>
-          </label>
-        </form>
-
-        <div className="shopping-cart-container">
-          <h2 className="login">Log in</h2>
-        </div> */}
         <Nav/>
         <div className="bottom-wrapper">
           <a className="link" href="/shop">shop</a>
@@ -42,7 +26,6 @@ function Home() {
 
       </div>
       <div className='sections-container'>
-        {/* <Cards /> */}
       </div>
       <div>
         <Lookbook/>
