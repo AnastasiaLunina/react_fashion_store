@@ -1,0 +1,48 @@
+.modal {
+    right: 20px;
+    bottom: 50vh; 
+    height: 100%;
+    /* width: 100%; */
+  }
+  
+  .modal-main {
+    position:fixed;
+    width: 20%;
+    height: auto;
+    top:50%;
+    right:30%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+
+  .modal {
+    position: fixed;
+    top: 40vh;
+    text-decoration: none;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .modal-close {
+    border: none;
+    background: transparent;
+  }
+
+  .xmark {
+    height: 80px;
+    margin-left: 85px;
+}
+
+.sale {
+  width: 80%;
+}
