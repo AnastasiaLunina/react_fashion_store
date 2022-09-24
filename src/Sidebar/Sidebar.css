@@ -53,6 +53,8 @@
   .bm-item-list {
     color: #b8b7ad;
     padding: 0.8em;
+    display: flex;
+    flex-direction: column;
   }
     
   /* Styling of overlay */

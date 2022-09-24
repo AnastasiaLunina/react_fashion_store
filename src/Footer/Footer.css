@@ -1,0 +1,41 @@
+.footer-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.newsletter {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social-media-list {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.contact-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.newsletter-sign-github, .newsletter-sign-linkedin {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}

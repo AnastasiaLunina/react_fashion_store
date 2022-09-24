@@ -1,0 +1,42 @@
+ .products {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+body {
+  /* background-color: red; */
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 2;
+  flex-basis: 25%;
+  margin-top: 40px;
+}
+
+.cont, nav {
+  display: flex;
+  justify-content: center;
+}
+
+.change {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* .link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+} */
+
+button {
+  margin: 10px;
+}
+

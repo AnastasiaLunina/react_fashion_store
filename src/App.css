@@ -3,15 +3,15 @@
   overflow-x: hidden;
 }
 
-.App {
+.home {
   text-align: center;
-  background: url("https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");  
+  /* background: url("https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");   */
   background-size:cover;
   background-repeat: no-repeat;
   background-position: top;
   height: 100vh;
   position: relative;
-
+  overscroll-behavior-y: scroll;
 }
 
 .sections-container {
@@ -64,4 +64,44 @@
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #fff;
+}
+
+.logo {
+  position: fixed;
+  left: 10%;
+  /* right: 60%; */
+  z-index: 2;
+}
+
+/* .main-container {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* position: absolute;
+  right: 20%;
+  left: 20%;
+  top: 80%; */
+}
+
+.link {
+  position: fixed;
+  z-index: 3;
+  width: 180px;
+  /* height: 40px; */
+  right: auto;
+  top:50vh;
+  text-decoration: none;
+  font-size: 40px;
+  color: red;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  /* position: fixed;
+  text-align: center;
+  z-index: 2; */
 }

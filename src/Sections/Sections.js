@@ -1,33 +1,18 @@
 import React from 'react';
 import './Sections.css';
+// import New from '../Cards/New';
 
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
-
-function Sections() {
+function Sections({chosenClothes}) {
   return (
     <div className='main-container'>
-    <Router>
       <nav className='link-container'>
-        <Link to='/new' className='link'>new</Link>
-        <Link to='/basics' className='link'>basics</Link>
-        <Link to='/weartowork' className='link'>wear to work</Link>
-        <Link to='/shoes' className='link'>shoes</Link>
-        <Link to='/goingout' className='link'>going out</Link>
+        <button className='link' onClick={() => chosenClothes('new')}>new</button>
+        <button className='link' onClick={() => chosenClothes('basics')}>basics</button>
+        <button className='link' onClick={() => chosenClothes('work')}>wear to work</button>
+        <button className='link' onClick={() => chosenClothes('shoes')}>shoes</button>
+        <button className='link' onClick={() => chosenClothes('out')}>going out</button>
       </nav>
-      <Routes>
-        <Route path="/new" element='new'/>
-        <Route path="/basics" element='basics'/>
-        <Route path="/weartowork" element='weartowork'/>
-        <Route path="/shoes" element='shoes'/>
-        <Route path="/goingout" element='goingout'/>
-      </Routes>
-    </Router>
-</div>
+    </div>
   );
 };
 
