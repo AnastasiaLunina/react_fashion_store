@@ -18,7 +18,6 @@ function Home() {
         <div className="bottom-wrapper">
           <Link to='/shop' className="link" >shop</Link>
         </div>
-
       </div>
       <div className='sections-container'>
       </div>

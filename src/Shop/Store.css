@@ -70,9 +70,33 @@ button {
   background-color: transparent;
   color: red;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .view-all {
   text-decoration: none;
   color: #fff;
 }
+
+@media screen and (max-width:600px) {
+    .card-img {
+      margin-right: 10px;
+      margin-left: 10px;
+      flex: 1;
+      /* width: 100%; */
+    }
+    .products {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .product-card {
+      padding: 2%;
+      flex-grow: 1;
+      flex-basis: 100%;
+      margin-top: 40px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  
+  }

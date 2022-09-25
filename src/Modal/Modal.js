@@ -1,7 +1,5 @@
 import './Modal.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-
+import cross from '../img/cross.png';
 
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -11,7 +9,8 @@ const Modal = ({ handleClose, show, children }) => {
       <section className="modal-main link">
         {children}
         <button type="button" onClick={handleClose} className='modal-close'>
-        <FontAwesomeIcon icon={faXmark} className='xmark'/>
+        <img src={cross} alt='xmark' className='cross'/>
+        {/* <FontAwesomeIcon icon={faXmark} className='xmark a'/> */}
         </button>
       </section>
     </div>

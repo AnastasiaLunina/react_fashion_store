@@ -28,7 +28,8 @@ function Clothes({garment}) {
                          data-aos="fade-zoom-in"
                          data-aos-easing="ease-in-back"
                          data-aos-delay="200"
-                         data-aos-offset="0"/>
+                         data-aos-offset="0"
+                         className="card-img"/>
                     <div className='product-info'>
                         <div className='product-description'>
                             <p>{name}</p>

@@ -97,13 +97,79 @@
 }
 
 @media screen and (max-width:600px) {
-#page-wrap {
-    display: flex;
-    flex-direction: column;
+.input-search {
+  margin-top: 100px;
   }
 
   .social-media-list {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin-top: 20px;
   }
+
+  .logo-img {
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  button.modal {
+    height: 130px;
+  }
+
+  .modal {
+    color: #000;
+  }
+
+  .lookbook-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .btn1, .btn2 {
+    color: #fff;
+  }
+
+  .modal-close {
+    color: red;
+    background-color:red;
+    border: 2p solid black;
+  }
+
+  .modal {
+    top: 80vh;
+    margin-top: 300px;
+  }
+  .modal-close {
+    border: 1px solid black;
+    padding-left: 0;
+    margin-left: 5px;
+  }
+
+  .cont {
+    margin: 5px;
+  }
+
+  .bn36 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-img {
+    margin-right: 10px;
+    margin-left: 10px;
+    flex: 1;
+    width: 100%;
+  }
+  .products {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
 }

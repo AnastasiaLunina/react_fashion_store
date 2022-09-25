@@ -9,8 +9,8 @@
     position:fixed;
     width: 20%;
     height: auto;
-    top:50%;
-    right:30%;
+    top:38%;
+    right:29%;
     transform: translate(-50%,-50%);
   }
   
@@ -38,12 +38,16 @@
     background: transparent;
   }
 
-  .xmark {
+  /* .xmark {
     height: 80px;
     margin-left: 85px;
     cursor: pointer;
-}
+} */
+
+.cross {
+  cursor: pointer;
+}  
 
 .sale {
-  width: 80%;
+  width: 100%;
 }
