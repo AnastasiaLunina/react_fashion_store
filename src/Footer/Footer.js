@@ -1,13 +1,22 @@
 import './Footer.css';
 import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
+import React, { useState } from "react";
+import Toggle from './Toggle';
 
 function Footer() {
+  const [active, setActive] = useState(false);
+
+  const handleChangeActive = () => {
+    setActive((previousStar) => {
+      return !previousStar;
+    });
+  };
 
   return(
     <div className="footer-container">
         <div className="newsletter">
-            <h1 className="newsletter-sign">Sign up for our newsletter</h1>
+            <Toggle active={active} handleChangeActive={handleChangeActive} />
             <ul className='social-media-list'>
                 <li className='social-media-list-item'>tiktok</li>
                 <li className='social-media-list-item'>instagram</li>

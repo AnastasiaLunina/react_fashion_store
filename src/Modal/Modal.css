@@ -41,6 +41,7 @@
   .xmark {
     height: 80px;
     margin-left: 85px;
+    cursor: pointer;
 }
 
 .sale {

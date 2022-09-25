@@ -39,3 +39,7 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
+.newsletter-sign:hover {
+    color: red;
+}

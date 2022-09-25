@@ -25,7 +25,6 @@ class Dashboard extends Component {
     return (
       <main>
         <Modal show={this.state.show} handleClose={this.hideModal}>
-          {/* <p>Congrutalations! You won 20% off</p> */}
           <img src={sale} alt='sale' className='sale'/>
         </Modal>
         <button type="button" onClick={this.showModal} className='modal'>
