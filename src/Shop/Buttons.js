@@ -1,8 +1,8 @@
 import './Store.css';
-import {
-  // BrowserRouter as Router,
-  Link
-} from "react-router-dom";
+// import {
+//   // BrowserRouter as Router,
+//   Link
+// } from "react-router-dom";
 
 function Buttons({chosenClothes}) {
   return (
