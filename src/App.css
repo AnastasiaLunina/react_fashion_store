@@ -99,6 +99,7 @@
 @media screen and (max-width:600px) {
 .input-search {
   margin-top: 100px;
+  right: 225px;
   }
 
   .social-media-list {
@@ -115,7 +116,7 @@
   }
 
   .text {
-    font-size: 18px;
+    display: none;
   }
 
   button.modal {
@@ -172,4 +173,7 @@
     margin-left: 10px;
   }
 
+  .login {
+    font-size: 20px;
+  }
 }

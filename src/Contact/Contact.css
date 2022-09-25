@@ -10,7 +10,6 @@
   .msg_input {
     height: 100px;
     outline-color: #000;
-
   }
   
   .email_input {
@@ -33,6 +32,7 @@
   }
 
   .submit-btn {
+    background-color: #EEEEEE;
     padding: 10px;
     border: none;
     width: 100px;
@@ -93,6 +93,9 @@
     margin-right: 20px;
     margin-left: 20px;
 }
+.footer-links {
+  padding-left: 0;
+}
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
@@ -120,4 +123,5 @@
     margin-bottom: 20px;
     padding: 0;
 }
+
 }
