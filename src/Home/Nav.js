@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Home.css';
 import logo from '../img/logo.png';
 import cart from '../img/shopping-bag.png';
@@ -7,7 +8,7 @@ import Tilty from 'react-tilty';
 function Nav() {
 
   return (
-    <div>
+    <div className="shop-cards-wrapper">
       <div className="shop-cards" id="outer-container">
         <div id="page-wrap">
         <Tilty style={{ transformStyle: 'preserve-3d', height: 160, width: 200 }} className='Tilt br2 shadow-2 logo'>
@@ -15,7 +16,7 @@ function Nav() {
         </Tilty>
         </div>
         <div className="shopping-cart-container">
-          <a href="cart"><img src={cart} alt='cart' className="cart"/></a>
+          <img src={cart} alt='cart' className="cart"/>
         </div>
 
         <form>

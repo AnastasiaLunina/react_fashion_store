@@ -72,6 +72,7 @@
     left: 10%;
     /* right: 60%; */
     z-index: 2;
+    overflow-y: hidden;
   }
 
   .link {
@@ -85,5 +86,6 @@
     background-color: transparent;
     cursor: pointer;
   }
+
 
 

@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+  // BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 import Sidebar from '../Sidebar/Sidebar';
 import Lookbook from '../Lookbook/Lookbook';
 import Footer from '../Footer/Footer';
@@ -12,7 +16,7 @@ function Home() {
         <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         <Nav/>
         <div className="bottom-wrapper">
-          <a className="link" href="/shop">shop</a>
+          <Link to='/shop' className="link" >shop</Link>
         </div>
 
       </div>
