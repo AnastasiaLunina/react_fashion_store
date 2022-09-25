@@ -1,5 +1,4 @@
 import './Store.css';
-import './Store.js';
 
 function Buttons({chosenClothes}) {
   return (

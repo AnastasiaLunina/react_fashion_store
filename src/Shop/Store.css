@@ -43,13 +43,6 @@ body {
   cursor: pointer;
 }
 
-/* .link {
-  padding: 10px 40px;
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-} */
-
 button {
   margin: 10px;
 }
@@ -73,4 +66,11 @@ button {
 
 .description {
   width: 300px;
+}
+
+.show-more-btn {
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-size: 18px;
 }

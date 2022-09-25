@@ -2,13 +2,19 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css';
 // import New from '../Cards/New';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function Sidebar() {
   return (
     <Menu>
-      <a className="bm-item" href="/">Home</a>
-      <a className="bm-item" href="/shop">Shop</a>
-      <a className="bm-item" href="/contact">Contact us</a>
+      <Link to='/' className="bm-item">Home</Link>
+      <Link to='/shop' className="bm-item">Shop</Link>
+      <Link to='/contact' className="bm-item">Contact us</Link>
     </Menu>
   );
 };
