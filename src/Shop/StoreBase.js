@@ -12,7 +12,7 @@ function StoreBase() {
       const newClothes = data.filter(item => item.searchTerm === searchTerm);
       setGarment(newClothes);
     }
-  
+
     return (
       <div>
         <Sidebar/>

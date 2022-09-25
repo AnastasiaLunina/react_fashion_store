@@ -71,3 +71,8 @@ button {
   color: red;
   font-size: 18px;
 }
+
+.view-all {
+  text-decoration: none;
+  color: #fff;
+}

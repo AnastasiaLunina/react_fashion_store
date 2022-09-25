@@ -221,7 +221,7 @@ export const data = [
       searchTerm: "sport",
       price: 284.99,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eveniet vel dolores earum necessitatibus, ab unde ipsum fugit quod, aliquid accusantium iure! Consectetur dolores neque deleniti similique voluptatem, quae ea.',
-      image: "https://images.unsplash.com/photo-1528415784548-1850e0fc8c57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+      image: "https://images.unsplash.com/photo-1599447292411-637efa33e046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
     },
     {
       id: 29,
@@ -253,7 +253,7 @@ export const data = [
       searchTerm: "sport",
       price: 284.99,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eveniet vel dolores earum necessitatibus, ab unde ipsum fugit quod, aliquid accusantium iure! Consectetur dolores neque deleniti similique voluptatem, quae ea.',
-      image: "https://images.unsplash.com/photo-1599447292411-637efa33e046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+      image: "https://images.unsplash.com/photo-1528415784548-1850e0fc8c57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
     },
     {
       id: 33,
