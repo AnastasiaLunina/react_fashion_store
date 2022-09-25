@@ -5,14 +5,10 @@
   margin-left: 40px;
 }
 
-body {
-  /* background-color: red; */
-}
-
 .product-description {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 350px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -27,6 +23,7 @@ body {
   flex-basis: 25%;
   margin-top: 40px;
   margin-right: 100px;
+  margin-left: 100px;
 }
 
 .cont, nav {

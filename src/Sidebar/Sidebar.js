@@ -1,11 +1,8 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css';
-// import New from '../Cards/New';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
+  // BrowserRouter as Router,
   Link
 } from "react-router-dom";
 

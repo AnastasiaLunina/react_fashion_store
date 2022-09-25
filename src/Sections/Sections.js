@@ -1,6 +1,5 @@
 import React from 'react';
 import './Sections.css';
-// import New from '../Cards/New';
 
 function Sections({chosenClothes}) {
   return (

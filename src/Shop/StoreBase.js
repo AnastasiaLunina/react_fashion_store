@@ -1,8 +1,7 @@
 import Clothes from './Clothes';
 import Buttons from './Buttons';
 import { useState } from 'react';
-import { data } from './data';
-import Home from '../Home/Home';
+import { data } from '../data';
 import Sidebar from '../Sidebar/Sidebar';
 import Nav from '../Home/Nav';
 

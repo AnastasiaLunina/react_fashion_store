@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 function Clothes({garment}) {
     useEffect(() => {
         AOS.init();
-        // AOS.refresh();
       }, []);
     const [showText, setShowText] = useState(false);
 
