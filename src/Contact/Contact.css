@@ -96,6 +96,16 @@
 .footer-links {
   padding-left: 0;
 }
+.thanks-email-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50vh;
+}
+.thanks-email {
+  color: red;
+  font-size: 30px;
+}
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]

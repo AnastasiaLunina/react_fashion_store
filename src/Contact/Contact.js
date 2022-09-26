@@ -1,12 +1,24 @@
+import { useForm, ValidationError } from '@formspree/react';
+import {
+  // BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 import Sidebar from '../Sidebar/Sidebar';
 import Nav from '../Home/Nav';
-import { useForm, ValidationError } from '@formspree/react';
 import './Contact.css';
+import logo from '../img/logo.png';
 
 function Contact() {
   const [state, handleSubmit] = useForm('xpzndrov');
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <div>
+        <Link to='/'className="logo"><img src={logo} className="logo-img" alt='logo' height='160px'/></Link>
+        <div className='thanks-email-container'>
+          <p className='thanks-email'>Thanks for joining!</p>
+        </div>
+      </div>
+  );
 }
     return (
       <div>
