@@ -1,4 +1,5 @@
 # React App Fashion Store
+*App is still in progress, I keep adding features
 
 ## In the project directory, you can run:
 

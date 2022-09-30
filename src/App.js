@@ -16,8 +16,6 @@ function App() {
       <div>
         <MainModal/>
         <Router>
-          <nav className='link-container'>
-          </nav>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/shop" element={<StoreBase/>}/>

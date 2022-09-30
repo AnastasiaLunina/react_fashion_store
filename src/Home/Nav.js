@@ -20,14 +20,14 @@ function Nav() {
             <img src={cart} alt='cart' className="cart"/>
           </div>
 
-          <form>
+          {/* <form>
             <label>
               <input type="search" 
                     name="name" 
                     className="input-search" 
                     placeholder="search..."/>
             </label>
-          </form>
+          </form> */}
 
           <div className="shopping-cart-container">
             <h2 className="login">Log in</h2>
