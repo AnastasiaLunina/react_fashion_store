@@ -30,6 +30,12 @@
     right: 36px;
     top: 15px;
     z-index: 2;
+    cursor: pointer;
+  }
+
+  .cart-btn {
+    background-color: transparent;
+    border: none;
   }
   
   .login {
@@ -53,7 +59,7 @@
     border-bottom: 5px solid;
     background: transparent;
     text-transform: capitalize;
-    color: #fff;
+    /* color: #fff; */
     font-size: 25px;
     outline: none;
     cursor: pointer;

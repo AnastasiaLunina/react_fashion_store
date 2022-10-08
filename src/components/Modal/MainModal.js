@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Modal from './Modal.js';
-import gift from '../img/gift.png';
-import sale from '../img/sale.png';
+import gift from '../../img/gift.png';
+import sale from '../../img/sale.png';
 
 class Dashboard extends Component {
   constructor() {

@@ -6,7 +6,7 @@ import {
 import Sidebar from '../Sidebar/Sidebar';
 import Nav from '../Home/Nav';
 import './Contact.css';
-import logo from '../img/logo.png';
+import logo from '../../img/logo.png';
 
 function Contact() {
   const [state, handleSubmit] = useForm('xpzndrov');

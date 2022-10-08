@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   // BrowserRouter as Router,
-  Link
+  Link, Outlet
 } from "react-router-dom";
 import Sidebar from '../Sidebar/Sidebar';
 import Lookbook from '../Lookbook/Lookbook';
@@ -27,6 +27,7 @@ function Home() {
       <div>
         <Footer/>
       </div>
+      <Outlet />
     </div>
   );
 }

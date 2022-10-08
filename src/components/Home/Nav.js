@@ -1,8 +1,9 @@
 import React from 'react';
+import { Outlet, Link } from 'react-router-dom';
 
 import './Home.css';
-import logo from '../img/logo.png';
-import cart from '../img/shopping-bag.png';
+import logo from '../../img/logo.png';
+import cart from '../../img/shopping-bag.png';
 import Tilty from 'react-tilty';
 
 function Nav() {
@@ -17,7 +18,7 @@ function Nav() {
         </div>
         <div className='right-side-container'>
           <div className="shopping-cart-container">
-            <img src={cart} alt='cart' className="cart"/>
+            <Link to='/cart' className="cart cart-btn"><img src={cart} alt='cart' className="cart"/></Link>
           </div>
 
           {/* <form>
@@ -34,6 +35,7 @@ function Nav() {
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 }

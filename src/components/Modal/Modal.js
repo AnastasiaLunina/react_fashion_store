@@ -1,5 +1,5 @@
 import './Modal.css';
-import cross from '../img/cross.png';
+import cross from '../../img/cross.png';
 
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";

@@ -1,6 +1,6 @@
 import './Footer.css';
-import github from '../img/github.png';
-import linkedin from '../img/linkedin.png';
+import github from '../../img/github.png';
+import linkedin from '../../img/linkedin.png';
 import React, { useState } from "react";
 import Toggle from './Toggle';
 

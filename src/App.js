@@ -1,14 +1,16 @@
 import React from 'react';
-import Home from './Home/Home';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
+
 import './App.css';
-import StoreBase from './Shop/StoreBase';
-import MainModal from '../src/Modal/MainModal';
-import Contact from '../src/Contact/Contact';
+
+import StoreBase from '../src/components/Shop/StoreBase';
+import MainModal from '../src/components/Modal/MainModal';
+import Contact from '../src/components/Contact/Contact';
+import Home from '../src/components/Home/Home';
 
 function App() {
   return (

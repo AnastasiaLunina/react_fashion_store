@@ -19,8 +19,8 @@
 
 .product-card {
   padding: 2%;
-  flex-grow: 2;
-  flex-basis: 25%;
+  /* flex-grow: 2;
+  flex-basis: 25%; */
   margin-top: 40px;
   margin-right: 100px;
   margin-left: 100px;

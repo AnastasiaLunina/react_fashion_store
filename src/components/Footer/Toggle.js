@@ -1,5 +1,5 @@
 import React from "react";
-import like from '../img/like.png';
+import like from '../../img/like.png';
 import "./Footer.css";
 
 function Toggle({ active, handleChangeActive }) {
