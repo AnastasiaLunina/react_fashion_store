@@ -96,9 +96,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:670px) {
 .input-search {
-  margin-top: 100px;
+  /* margin-top: 50px; */
   right: 225px;
   }
 
