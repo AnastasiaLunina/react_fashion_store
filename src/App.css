@@ -124,13 +124,13 @@ body {
     display: none;
   }
 
-  /* button.modal {
+  button.modal {
     height: 130px;
   }
 
   .modal {
     color: #000;
-  } */
+  }
 
   .lookbook-img {
     width: 100vw;
@@ -181,6 +181,9 @@ body {
   .login {
     font-size: 15px;
   }
+  .arrow {
+    color: white;
+}
   
 }
 

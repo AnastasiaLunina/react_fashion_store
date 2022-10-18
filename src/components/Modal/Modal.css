@@ -2,9 +2,9 @@
     position:fixed;
     width: 20%;
     height: auto;
-    /* bottom:38%;
-    right:29%; */
-    /* transform: translate(-50%,-50%); */
+    bottom:38%;
+    right:29%;
+    transform: translate(-50%,-50%);
   }
   
   .display-block {
@@ -17,7 +17,7 @@
 
   .modal {
     position: fixed;
-    top: 40vh;
+    top: 80vh;
     right: 20px;
     bottom: 50vh; 
     text-decoration: none;
@@ -35,11 +35,11 @@
     background: transparent;
   }
 
-  /* .xmark {
+  .xmark {
     height: 80px;
     margin-left: 85px;
     cursor: pointer;
-} */
+}
 
 .cross {
   cursor: pointer;
