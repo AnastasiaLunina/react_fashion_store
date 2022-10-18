@@ -95,6 +95,7 @@
 }
 .footer-links {
   padding-left: 0;
+  list-style-type: none;
 }
 .thanks-email-container {
   display: flex;

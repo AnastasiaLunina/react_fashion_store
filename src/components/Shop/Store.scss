@@ -94,12 +94,15 @@ button {
 
 .add-to-cart-button {
   position: absolute;
+  left: 50px;
+  right: 20px;
   width: 80%;
   height: 40px;
   opacity: 0.7;
   top: 255px;
   display: none;
   text-align: center;
+  color: black;
 }
 
 .product-card:hover {
@@ -133,6 +136,13 @@ button {
       margin-top: 40px;
       margin-right: 10px;
       margin-left: 10px;
+    }
+
+    .add-to-cart-button {
+      position: absolute;
+      left: 80px;
+      width: 50%;
+      color: black;
     }
   
   }
