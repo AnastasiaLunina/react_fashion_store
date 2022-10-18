@@ -1,15 +1,18 @@
 import { createContext, useState, useEffect } from "react";
 
 const addCartItem = (cartItems, productToAdd) => {
+    // check if cartItems contains productToAdd
     const existingCartItem = cartItems.find((cartItem) => cartItem.id === productToAdd.id);
 
+    // If match found, return new array of cartItems and increment quantity
+    // If does not match, return cartItem
     if (existingCartItem) {
         return cartItems.map((cartItem) => 
         cartItem.id === productToAdd.id ? 
         {...cartItem, quantity: cartItem.quantity + 1 } : cartItem)
     }
-
-
+    // Return new array with modified cartItems
+    // Returns all of the existing cart items, and adds new product together with quantity
     return [...cartItems, { ...productToAdd, quantity: 1}]
 }
 
@@ -39,6 +42,8 @@ export const CartContext = createContext({
     cartCount: 0,
     cartTotal: 0,
 })
+
+
 
 export const CartProvider = ({children}) => {
     const [isCartOpen, setIsCartOpen] = useState(false);

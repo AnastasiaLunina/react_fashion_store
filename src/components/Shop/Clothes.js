@@ -9,12 +9,13 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 
 
-function Clothes({garment}) {
+function Clothes({ garment }) {
+    const {id, name, price, image, description, showMore} = garment;
+
     const [searchInput, setSearchInput] = useState('');
     const [filteredResults, setFilteredResults] = useState([]);
 
     const { addItemToCart } = useContext(CartContext);
-    const addProductToCart = () => addItemToCart(garment)
      
     useEffect(() => {
         AOS.init();
@@ -43,20 +44,16 @@ function Clothes({garment}) {
     <div className='products'>
         <Search onChangeHandler={(e) => searchItems(e.target.value)} />
 
-        
         {searchInput.length > 1 ? (
-                    filteredResults?.map((item) => {
-            const {id, name, price, image, description, showMore} = item;
+                filteredResults?.map((item) => {
+            // const { id, name, price, image, description, showMore} = item;
             return(
                 <div className='product-card' key={id} >
                     <img src={image} 
                          alt='clothes' 
                          width='400px' 
                          height='500px' 
-                         data-aos="fade-zoom-in"
-                         data-aos-easing="ease-in-back"
-                         data-aos-delay="200"
-                         data-aos-offset="0"
+                         data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0"
                          className="card-img"/>
                     <div className='product-info'>
                         <div className='product-description'>
@@ -73,16 +70,14 @@ function Clothes({garment}) {
             )
             : (garment?.map((item) => {
                 const {id, name, price, image, description, showMore} = item;
+                
                 return(
                     <div className='product-card' key={id} >
                         <img src={image} 
                              alt='clothes' 
                              width='400px' 
                              height='500px' 
-                             data-aos="fade-zoom-in"
-                             data-aos-easing="ease-in-back"
-                             data-aos-delay="200"
-                             data-aos-offset="0"
+                             data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0"
                              className="card-img"/>
                         <div className='product-info'>
                             <div className='product-description'>
@@ -94,7 +89,7 @@ function Clothes({garment}) {
                             </p>
                         </div>
                         <button className="add-to-cart-button"
-                                onClick={addProductToCart}>Add To Cart
+                                onClick={() => addItemToCart(item)}>Add To Cart
                         </button>
                     </div>
                   )

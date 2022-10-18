@@ -11,7 +11,7 @@ import StoreBase from '../src/components/Shop/StoreBase';
 import MainModal from '../src/components/Modal/MainModal';
 import Contact from '../src/components/Contact/Contact';
 import Home from '../src/components/Home/Home';
-import Cart from '../src/components/Cart/Cart';
+import Checkout from '../src/components/Checkout/Checkout';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/shop" element={<StoreBase/>}/>
             <Route path="/contact" element={<Contact/>}/>
-            <Route path="/cart" element={<Cart/>}/>
+            <Route path="/cart" element={<Checkout/>}/>
           </Routes>
         </Router>
       </div>

@@ -1,4 +1,4 @@
-import './Cart.css';
+import './Checkout.css';
 import Sidebar from '../Sidebar/Sidebar';
 import Nav from '../Home/Nav';
 

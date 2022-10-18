@@ -10,6 +10,7 @@
     top: 105px;
     right: 40px;
     z-index: 5;
+
   
     .empty-message {
       font-size: 18px;
@@ -17,19 +18,20 @@
     }
   
     .cart-items {
-      // height: 240px;
+      height: 260px;
       display: flex;
       flex-direction: column;
       overflow: scroll;
     }
   
-    button {
-      margin-top: 250px;
+    .button-checkout {
+      margin-top: auto;
       background-color: black;
       color: white;
       padding: 10px;
       border: none;
       width: 90%;
+      height: 20%;
       cursor: pointer;
       text-align: center;
 
