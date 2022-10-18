@@ -1,0 +1,10 @@
+.arrow-back {
+    width: 70px;
+    height: 70px;
+}
+
+.back-to-shop-btn {
+    cursor: pointer;
+    border:none;
+    background: transparent;
+}

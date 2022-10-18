@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .home {
   text-align: center;
   /* background: url("https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");   */
@@ -120,13 +124,13 @@
     display: none;
   }
 
-  button.modal {
+  /* button.modal {
     height: 130px;
   }
 
   .modal {
     color: #000;
-  }
+  } */
 
   .lookbook-img {
     width: 100vw;
@@ -175,7 +179,7 @@
   }
 
   .login {
-    font-size: 20px;
+    font-size: 15px;
   }
   
 }
@@ -215,6 +219,10 @@
 
   .cont {
     margin-right: 10px;
+  }
+
+  .login {
+    font-size: 15px;
   }
 
 }

@@ -1,17 +1,10 @@
-.modal {
-    right: 20px;
-    bottom: 50vh; 
-    height: 100%;
-    /* width: 100%; */
-  }
-  
   .modal-main {
     position:fixed;
     width: 20%;
     height: auto;
-    top:38%;
-    right:29%;
-    transform: translate(-50%,-50%);
+    /* bottom:38%;
+    right:29%; */
+    /* transform: translate(-50%,-50%); */
   }
   
   .display-block {
@@ -25,12 +18,16 @@
   .modal {
     position: fixed;
     top: 40vh;
+    right: 20px;
+    bottom: 50vh; 
     text-decoration: none;
     font-size: 40px;
     border: none;
     background-color: transparent;
     cursor: pointer;
     z-index: 5;
+    height: 130px;
+    color: #000;
   }
 
   .modal-close {
