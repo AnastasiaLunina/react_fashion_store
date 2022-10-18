@@ -1,14 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
 import { data } from '../../data';
 import Search from '../Search/Search';
+import { CartContext } from '../Context/Cart.context'
 
-import './Store.css';
+import './Store.scss';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
 
 function Clothes({garment}) {
+    const [searchInput, setSearchInput] = useState('');
+    const [filteredResults, setFilteredResults] = useState([]);
+
+    const { addItemToCart } = useContext(CartContext);
+    const addProductToCart = () => addItemToCart(garment)
+     
     useEffect(() => {
         AOS.init();
       }, []);
@@ -18,9 +25,6 @@ function Clothes({garment}) {
         element.showMore = !element.showMore
         setShowText(!showText)
       }
-
-    const [searchInput, setSearchInput] = useState('');
-    const [filteredResults, setFilteredResults] = useState([]);
 
     const searchItems = (searchValue) => {
         setSearchInput(searchValue)
@@ -33,7 +37,7 @@ function Clothes({garment}) {
         else{
             setFilteredResults(data)
         }
-}
+    }
 
   return (
     <div className='products'>
@@ -89,10 +93,14 @@ function Clothes({garment}) {
                                 <button className='show-more-btn' onClick={() => showTextOnClick(item)} > {showMore ? 'Show less' : 'Show more'}</button>
                             </p>
                         </div>
+                        <button className="add-to-cart-button"
+                                onClick={addProductToCart}>Add To Cart
+                        </button>
                     </div>
                   )
                 })
             )}
+            
     </div>
   );
 }

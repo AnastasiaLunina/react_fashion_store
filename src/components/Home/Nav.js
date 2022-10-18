@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 import './Home.css';
@@ -6,7 +6,14 @@ import logo from '../../img/logo.png';
 import cart from '../../img/shopping-bag.png';
 import Tilty from 'react-tilty';
 
+import CartDropdown from '../CartDropdown/CartDropdown';
+import { CartContext } from '../Context/Cart.context';
+
 function Nav() {
+
+  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+
+  const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
 
   return (
     <div className="shop-cards-wrapper">
@@ -18,7 +25,10 @@ function Nav() {
         </div>
         <div className='right-side-container'>
           <div className="shopping-cart-container">
-            <Link to='/cart' className="cart cart-btn"><img src={cart} alt='cart' className="cart"/></Link>
+            <div className="cart cart-btn" onClick={toggleIsCartOpen}>
+                <img src={cart} alt='cart' className="cart"/>
+                <span className="item-count">0</span>
+            </div>
           </div>
 
           {/* <form>
@@ -35,6 +45,9 @@ function Nav() {
           </div>
         </div>
       </div>
+      <Link to='/cart'>
+        {isCartOpen && <CartDropdown />}
+      </Link>
       <Outlet />
     </div>
   );

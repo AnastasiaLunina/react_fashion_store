@@ -51,7 +51,7 @@
   }
 
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
+    color: black;
     opacity: 1; /* Firefox */
   }
   

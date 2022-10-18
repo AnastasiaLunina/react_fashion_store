@@ -83,7 +83,7 @@
   }
 
   .link {
-    position: fixed;
+    /* position: fixed; */
     z-index: 3;
     top:50vh;
     text-decoration: none;
@@ -92,6 +92,23 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+  }
+
+  /* .cart-item-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+  } */
+
+  .item-count {
+    position: absolute;
+    font-size: 10px;
+    font-size: 15px;
+    top: 38px;
+    left: 35px;
+    font-weight: bold;
   }
 
 

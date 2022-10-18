@@ -1,6 +1,7 @@
+import { useState } from 'react';
+
 import Clothes from './Clothes';
 import Buttons from './Buttons';
-import { useState } from 'react';
 import { data } from '../../data';
 import Sidebar from '../Sidebar/Sidebar';
 import Nav from '../Home/Nav';
@@ -13,6 +14,10 @@ function StoreBase() {
       setGarment(newClothes);
     }
 
+    const resetClothes = () => {
+      setGarment(data);
+    }
+
     return (
       <div>
         <Sidebar/>
@@ -20,7 +25,8 @@ function StoreBase() {
           <div className='cont'>
             <h2 className='back'>Free Standard Shipping</h2>
           </div>
-        <Buttons chosenClothes={chosenClothes}/>
+        <Buttons chosenClothes={chosenClothes} 
+                 resetClothes={resetClothes} />
         <Clothes garment={garment}/>
       </div>
     );
