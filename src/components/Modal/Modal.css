@@ -17,7 +17,7 @@
 
   .modal {
     position: fixed;
-    top: 80vh;
+    top: 40vh;
     right: 20px;
     bottom: 50vh; 
     text-decoration: none;
@@ -35,16 +35,10 @@
     background: transparent;
   }
 
-  .xmark {
-    height: 80px;
-    margin-left: 85px;
-    cursor: pointer;
-}
-
 .cross {
   cursor: pointer;
 }  
 
 .sale {
-  width: 100%;
+  width: 50%;
 }

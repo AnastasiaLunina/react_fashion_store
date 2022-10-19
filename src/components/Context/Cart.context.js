@@ -17,12 +17,15 @@ const addCartItem = (cartItems, productToAdd) => {
 }
 
 const removeCartItem = (cartItems, cartitemToRemove) => {
+    // find the cart item to remove
     const existingCartItem = cartItems.find((cartItem) => cartItem.id === cartitemToRemove.id);
-
+    
+    // check if quantity is equal to 1, if so remove that item from cart 
     if (existingCartItem.quantity === 1) {
         return cartItems.filter(cartItem => cartItem.id !== cartitemToRemove.id)
     }
 
+    // return back cart items wth matching cart item with reduced quantity
     return cartItems.map((cartItem) => 
     cartItem.id === cartitemToRemove.id ? 
     {...cartItem, quantity: cartItem.quantity - 1 } : cartItem)
@@ -51,6 +54,7 @@ export const CartProvider = ({children}) => {
     const [cartCount, setCartCount] = useState(0);
     const [cartTotal, setCartTotal] = useState(0);
 
+    // Everytime cartItems array changes, recalculate the array
     useEffect(() => {
         const newCartCount = cartItems.reduce((total, cartItem) => total + cartItem.quantity, 0);
         setCartCount(newCartCount);

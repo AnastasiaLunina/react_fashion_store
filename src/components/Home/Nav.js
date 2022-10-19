@@ -11,7 +11,7 @@ import { CartContext } from '../Context/Cart.context';
 
 function Nav() {
 
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
 
   const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
 
@@ -27,7 +27,7 @@ function Nav() {
           <div className="shopping-cart-container">
             <div className="cart cart-btn" onClick={toggleIsCartOpen}>
                 <img src={cart} alt='cart' className="cart"/>
-                <span className="item-count">0</span>
+                <span className="item-count">{cartCount}</span>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ function Nav() {
           </div>
         </div>
       </div>
-      <Link to='/cart'>
+      <Link to='/checkout'>
         {isCartOpen && <CartDropdown />}
       </Link>
       <Outlet />
