@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 
 function Clothes({ garment }) {
-    const {id, name, price, image, description, showMore} = garment;
+    // const {id, name, price, image, description, showMore} = garment;
 
     const [searchInput, setSearchInput] = useState('');
     const [filteredResults, setFilteredResults] = useState([]);
@@ -46,7 +46,7 @@ function Clothes({ garment }) {
 
         {searchInput.length > 1 ? (
                 filteredResults?.map((item) => {
-            // const { id, name, price, image, description, showMore} = item;
+            const { id, name, price, image, description, showMore} = item;
             return(
                 <div className='product-card' key={id} >
                     <img src={image} 
