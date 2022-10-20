@@ -45,7 +45,7 @@
     right: 136px;
     top: 40px;
     z-index: 2;
-    font-size: 25px;
+    font-size: 23px;
   }
   
   .input-search {
@@ -56,11 +56,11 @@
     top: 30px;
     z-index: 2;
     border: none;
-    border-bottom: 5px solid;
+    border-bottom: 3px solid;
     background: transparent;
     text-transform: capitalize;
     /* color: #fff; */
-    font-size: 25px;
+    font-size: 23px;
     outline: none;
     cursor: pointer;
   }

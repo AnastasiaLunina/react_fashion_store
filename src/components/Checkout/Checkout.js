@@ -6,12 +6,28 @@ import {
 import './Checkout.css';
 import Sidebar from '../Sidebar/Sidebar';
 import MainModal from '../Modal/MainModal';
+// import sale from '../../img/sale.png';
 
 import Nav from '../Home/Nav';
 import { CartContext } from '../Context/Cart.context';
 
+// import Swal from 'sweetalert2'
+// import withReactContent from 'sweetalert2-react-content'
+
+// const MySwal = withReactContent(Swal);
+
 const Checkout = () => {
   const { cartItems, addItemToCart, removeItemFromCart, clearItemFromCart, cartTotal } = useContext(CartContext);
+
+  // const unlockPromo = () => {
+  //   MySwal.fire({
+  //     title: 'PROMO20',
+  //     imageUrl: sale,
+  //     imageWidth: 200,
+  //     imageHeight: 200,
+  //     showConfirmButton: false,
+  //   })
+  // }
 
     return (
       <div>
@@ -55,13 +71,19 @@ const Checkout = () => {
             })
           }
         </div>
-        <hr/>
-        <div>
-          <h3>Unlock your promo</h3>
-          <label htmlFor="">Do you have a promo code?</label>
-          <input placeholder='Paste promo here'></input>
-          <h3>TOTAL</h3>
-          <span>{cartTotal} USD</span>
+        <hr className='divider'/>
+        <div className='total-container'>
+          {/* <button className='total-promo-unlock total' 
+                  onClick={unlockPromo}>
+                  Unlock your promo
+          </button>
+          <h3 className='total-promo-title total'>Do you have a promo code?</h3>
+          <input placeholder='Paste promo here' 
+                 className='total-promo-input total'
+                 value={input}
+                 onChange={(event)=>change(event.target.value)}></input> */}
+          <h3 className='total-field-title total'>TOTAL</h3>
+          <span className='total-field total'>{cartTotal} USD</span>
         </div>
       </div>
     );

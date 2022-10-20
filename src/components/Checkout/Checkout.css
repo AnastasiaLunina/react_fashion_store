@@ -40,6 +40,7 @@
     text-align: start;
     margin: 0;
     margin-bottom: 5px;
+    color: black;
 }
 
 .checkout-delete-button:hover {
@@ -76,4 +77,51 @@
     margin-bottom: 20px;
     color: black;
     text-decoration: none;
+}
+
+.divider {
+    margin: 20px;
+}
+
+.total-container {
+    margin: 20px;
+}
+
+.total {
+    margin-bottom: 15px;
+}
+
+.total-promo-input {
+    border: none;
+    border-bottom: 3px solid;
+    outline: none;
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.total-promo-input::placeholder {
+    color: #D1D1D1;
+}
+
+.total-promo-unlock {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.total-promo-unlock:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
+
+.total-field {
+    font-size: 23px;
 }

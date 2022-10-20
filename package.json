@@ -24,8 +24,8 @@
     "react-scripts": "5.0.1",
     "react-tilty": "^2.0.3",
     "sass": "^1.55.0",
-    "sweetalert2": "^11.4.33",
-    "sweetalert2-react-content": "^5.0.3",
+    "sweetalert2": "^11.6.0",
+    "sweetalert2-react-content": "^5.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
