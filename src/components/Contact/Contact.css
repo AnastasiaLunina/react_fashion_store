@@ -1,7 +1,7 @@
 .text_input {
     background-color: #EEEEEE;
     padding: 12px 20px;  
-    width: 300px;
+    width: 350px;
     border-radius: 3px;
     border: none;
     resize: none;
@@ -26,7 +26,7 @@
   .label_text {
     font-size: 25px;
     color: #EEEEEE;
-    width: 300px; 
+    width: 350px; 
     float: right;
     outline-color: #000;
   }
@@ -35,15 +35,18 @@
     background-color: #EEEEEE;
     padding: 10px;
     border: none;
-    width: 100px;
+    width: 350px;
     cursor: pointer;
     text-align: center;
     color: #000;
     transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    margin-top: 20px;
   }
   
   .submit-btn:hover {
     transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    color: white;
+    background: black;
   }
   
   .submit-btn:active {

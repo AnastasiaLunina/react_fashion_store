@@ -7,7 +7,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 function Lookbook() {
   const [person , setPerson] = useState(0);
-  const { description, image} = data[person];
+  const { image} = data[person];
 
   const previousPerson = () => {
     setPerson((person => {
@@ -32,7 +32,7 @@ function Lookbook() {
   return(
     <div>
       <div className="container">
-        <h2 className="text">{description}</h2>
+        {/* <h2 className="text">{description}</h2> */}
       </div>
       <div className="container-img">
         <img className='lookbook-img' src={image} alt="person"/>
