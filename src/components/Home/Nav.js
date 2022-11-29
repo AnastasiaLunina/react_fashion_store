@@ -13,6 +13,7 @@ import { CartContext } from '../Context/Cart.context';
 import Login from '../Login/Login';
 import Logout from '../Logout/Logout';
 import { useAuth0 } from "@auth0/auth0-react";
+import loader from '../../img/loader.svg'
 
 function Nav() {
   const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
@@ -21,7 +22,11 @@ function Nav() {
 
   const { isLoading } = useAuth0();
   if (isLoading) {
-    return <h1>Loading....</h1>
+    return(
+        <div className="loader-container">
+          <img src={loader} alt="loader" className="loader"/>
+        </div>
+    )
   }
 
   return (

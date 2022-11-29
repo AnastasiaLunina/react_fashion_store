@@ -110,5 +110,15 @@
     font-weight: bold;
   }
 
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .loader {
+    margin-top: 30vh;
+  }
+
 
 
