@@ -1,0 +1,9 @@
+.auth-button {
+    z-index: 2;
+    border: none;
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}

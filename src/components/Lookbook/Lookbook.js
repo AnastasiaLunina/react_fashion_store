@@ -1,46 +1,49 @@
-import { useState } from "react";
-import { data } from "./data";
+import { useState, useEffect } from "react";
+import data from "./data";
 import './Lookbook.css';
+import Slides from './Slides';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 function Lookbook() {
-  const [person , setPerson] = useState(0);
-  const { image} = data[person];
+  // eslint-disable-next-line
+  const [slides , setSlides] = useState(data);
+  const [index , setIndex] = useState(0);
 
-  const previousPerson = () => {
-    setPerson((person => {
-      person--;
-      if (person < 0 ) {
-        return data.length - 1;
-      }
-      return person;
-    }))
-  }
+  useEffect(() => {
+    const lastElement = data.length - 1;
+    if (index < 0) {
+      setIndex(lastElement);
+    } 
+    if (index > lastElement) {
+      setIndex(0);
+    }
+  }, [index, slides])
 
-  const nextPerson = () => {
-    setPerson((person => {
-      person++;
-      if (person > data.length - 1) {
-        return person = 0;
-      }
-      return person;
-    }))
-  }
+  useEffect(() => {
+    const slider = setInterval(() => {
+      setIndex(index + 1);      
+    }, 3000);
+    return () => clearInterval(slider);
+  }, [index]);
 
   return(
     <div>
       <div className="container">
-        {/* <h2 className="text">{description}</h2> */}
       </div>
       <div className="container-img">
-        <img className='lookbook-img' src={image} alt="person"/>
+        {slides.map((slide, slideIndex) => {
+
+          return (
+            <Slides key={slide.id} {...slide} slideIndex={slideIndex} index={index} />
+          )
+        })}
       </div>
 
       <div className="container-btn">
-        <button className="btn1" onClick={previousPerson}><FontAwesomeIcon icon={faArrowRight} className='arrow'/></button>
-        <button className="btn2" onClick={nextPerson}><FontAwesomeIcon icon={faArrowLeft} className='arrow'/></button>
+        <button className="btn1" onClick={() => setIndex(index - 1)}><FontAwesomeIcon icon={faArrowRight} className='arrow'/></button>
+        <button className="btn2" onClick={() => setIndex(index + 1)}><FontAwesomeIcon icon={faArrowLeft} className='arrow'/></button>
       </div>
     </div>
   )

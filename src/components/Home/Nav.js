@@ -7,13 +7,22 @@ import cart from '../../img/shopping-bag.png';
 import Tilty from 'react-tilty';
 
 import CartDropdown from '../CartDropdown/CartDropdown';
+// import Dashboard from '../Dashboard/Dashboard';
+
 import { CartContext } from '../Context/Cart.context';
+import Login from '../Login/Login';
+import Logout from '../Logout/Logout';
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Nav() {
-
   const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
 
   const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
+
+  const { isLoading } = useAuth0();
+  if (isLoading) {
+    return <h1>Loading....</h1>
+  }
 
   return (
     <div className="shop-cards-wrapper">
@@ -22,6 +31,7 @@ function Nav() {
         <Tilty style={{ transformStyle: 'preserve-3d', height: 160, width: 200 }} className='Tilt br2 shadow-2 logo'>
           <a className="logo" href="/"><img src={logo} className="logo-img" alt='logo' height='160px'/></a>
         </Tilty>
+
         </div>
         <div className='right-side-container'>
           <div className="shopping-cart-container">
@@ -41,7 +51,10 @@ function Nav() {
           </form> */}
 
           <div className="shopping-cart-container">
-            <h2 className="login">Log in</h2>
+            <div className="login">
+              <Login/>
+              <Logout/>
+            </div>
           </div>
         </div>
       </div>

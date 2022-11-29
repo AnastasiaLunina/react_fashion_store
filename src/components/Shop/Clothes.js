@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useContext } from "react";
 
 import { data } from '../../data';
-import Search from '../Search/Search';
 import { CartContext } from '../Context/Cart.context'
 
 import './Store.scss';
 import AOS from 'aos';
 import "aos/dist/aos.css";
+
+import Search from '../Search/Search';
+// import Toggle from '../Toggle/Toggle';
 
 
 function Clothes({ garment }) {
@@ -14,13 +16,14 @@ function Clothes({ garment }) {
 
     const [searchInput, setSearchInput] = useState('');
     const [filteredResults, setFilteredResults] = useState([]);
+    // const [active, setActive] = useState(false);
+    const [showText, setShowText] = useState(false);
 
     const { addItemToCart } = useContext(CartContext);
-     
+
     useEffect(() => {
         AOS.init();
       }, []);
-    const [showText, setShowText] = useState(false);
 
     const showTextOnClick = (element) => {
         element.showMore = !element.showMore
@@ -42,6 +45,7 @@ function Clothes({ garment }) {
 
   return (
     <div className='products'>
+
         <Search onChangeHandler={(e) => searchItems(e.target.value)} />
 
         {searchInput.length > 1 ? (
@@ -83,7 +87,7 @@ function Clothes({ garment }) {
                             <div className='product-description'>
                                 <p>{name}</p>
                                 <p>${price}</p>
-                            </div>
+                        </div>
                             <p className='description'>{showMore ? description : description.substring(0, 170) + "...."}
                                 <button className='show-more-btn' onClick={() => showTextOnClick(item)} > {showMore ? 'Show less' : 'Show more'}</button>
                             </p>

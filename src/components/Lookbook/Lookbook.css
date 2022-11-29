@@ -1,4 +1,6 @@
 .lookbook-img {
+    position: absolute;
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
 }
@@ -35,4 +37,21 @@
     top: 105%;
     left: 25%;
     z-index: 1;
+  }
+
+  article {
+    /* position: relative; */
+    /* width: 100%; */
+    /* height: 100%; */
+    opacity: 0;
+  }
+  article.activeSlide {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
+  article.lastSlide {
+    /* transform: translateX(-100%); */
+  }
+  article.nextSlide {
+    /* transform: translateX(100%); */
   }
